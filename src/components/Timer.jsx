@@ -4,7 +4,7 @@ import {
   Input,
   Text,
   Toast,
-  useToast,
+  useToast
 } from "@chakra-ui/react";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -74,7 +74,9 @@ const Timer = () => {
     <div>
       <Heading size="2xl">Timer</Heading>
       <br />
-      <Heading as="h5" size="xl">Your Entered Time In Seconds : {val} </Heading>
+      <Heading as="h5" size="xl">
+        Your Entered Time In Seconds : {val}{" "}
+      </Heading>
       <Input
         value={val}
         onChange={handleChange}
@@ -97,10 +99,10 @@ const Timer = () => {
         onClick={() =>
           toast({
             title: "Timer Developed By",
-            description: "Prajwal Jaiswal WEB-17 Masai School",
+            description: "zubair WEB-17 Masai School",
             status: "success",
             duration: 9000,
-            isClosable: true,
+            isClosable: true
           })
         }
       >

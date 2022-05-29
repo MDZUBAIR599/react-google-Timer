@@ -2,7 +2,7 @@ import { Button, Stack, Toast, useToast } from "@chakra-ui/react";
 import React from "react";
 
 const ButtonStopwatch = (props) => {
-    const toast = useToast()
+  const toast = useToast();
   console.log(props);
   return (
     <div>
@@ -43,18 +43,18 @@ const ButtonStopwatch = (props) => {
       <br />
 
       <Button
-      onClick={() =>
-        toast({
-          title: 'Stopwatch Developed By',
-          description: "Prajwal Jaiswal WEB-17 Masai School",
-          status: 'success',
-          duration: 9000,
-          isClosable: true,
-        })
-      }
-    >
-      Show Credits
-    </Button>
+        onClick={() =>
+          toast({
+            title: "Stopwatch Developed By",
+            description: "Zubair WEB-17 Masai School",
+            status: "success",
+            duration: 9000,
+            isClosable: true
+          })
+        }
+      >
+        Show Credits
+      </Button>
     </div>
   );
 };
